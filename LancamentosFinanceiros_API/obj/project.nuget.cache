@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rF0MYR3b7VcfSd8yBKntiPvFRzkaS6GnbkLYmpSCzl45/uCcY+gyhG6oySYauuwTvhiWSOL7pAlUoHWkooiLFA==",
+  "dgSpecHash": "hqsC9VouiWOEIdA7b7sMY9NAxiwxz5VevXST2SQCwXB7V6U4MbOvjp+7AVHWYTppJcxKj316vZ8o1HQ8l16IFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felip\\Documents\\TesteItau\\LancamentosFinanceiros\\LancamentosFinanceiros.csproj",
+  "projectFilePath": "C:\\Users\\felip\\OneDrive\\Documentos\\Teste Itau\\Repositorio\\LancamentosFinanceiros\\LancamentosFinanceiros_API\\LancamentosFinanceiros.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

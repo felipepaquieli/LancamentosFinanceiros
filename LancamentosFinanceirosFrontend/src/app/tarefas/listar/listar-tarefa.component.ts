@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { tap } from 'rxjs/operators';
 
-import { TarefaService, Tarefa } from '../shared';
+import { LancamentoService, Lancamento } from '../shared';
 
 @Component({
   selector: 'app-listar-tarefa',
@@ -9,30 +10,37 @@ import { TarefaService, Tarefa } from '../shared';
 })
 export class ListarTarefaComponent implements OnInit {
 
-  tarefas: Tarefa[];
-
-  constructor(private tarefaService: TarefaService) {}
+  totalRegistros: number;
+  listaLancamentos: Lancamento[];
+  columns = [];
+  constructor(private lancamentoService: LancamentoService) {}
 
   ngOnInit() {
-  	this.tarefas = this.listarTodos();
+  	this.listarTodos();
   }
 
-  listarTodos(): Tarefa[] {
-  	return this.tarefaService.listarTodos();
+  buildColumns(): void{
+    this.columns = [
+      {prop: 'dataLancamento', name: 'Data do Lançamento'},
+      {prop: 'valor', name: 'Valor'},
+      {prop: 'tipoLancamento', name:'Tipo de Lançamento'},
+      {prop: 'statusLancamento', name:'Status do Lançamento'}
+    ];
   }
 
-  remover($event: any, tarefa: Tarefa): void {
+  listarTodos(): void{
+  	this.lancamentoService.listarTodos()
+    .pipe(tap((r) => (this.totalRegistros = r.length > 0 ? r.length + 1 : 0)))
+    .subscribe((r) => (this.listaLancamentos = r));
+    debugger;
+    console.log(this.listaLancamentos);
+  }
+
+  remover($event: any, lancamento: Lancamento): void {
     $event.preventDefault();
-    if (confirm('Deseja remover a tarefa "' + tarefa.nome + '"?')) {
-      this.tarefaService.remover(tarefa.id);
-      this.tarefas = this.tarefaService.listarTodos();
-    }
-  }
-
-  alterarStatus(tarefa: Tarefa): void {
-    if (confirm('Deseja alterar o status da tarefa "' + tarefa.nome + '"?')) {
-      this.tarefaService.alterarStatus(tarefa.id);
-      this.tarefas = this.tarefaService.listarTodos();
+    if (confirm('Deseja remover o lançamento?')) {
+      this.lancamentoService.remover(lancamento.idLancamento);
+      this.lancamentoService.listarTodos();
     }
   }
 

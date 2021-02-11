@@ -17,9 +17,9 @@ namespace LancamentosFinanceiros.Controllers
     {
         [HttpGet]
         [Route("")]
-        public async Task<ActionResult<List<LancamentoFinanceiro>>> Get([FromServices] DataContext context)
+        public async Task<ActionResult<LancamentoFinanceiro[]>> Get([FromServices] DataContext context)
         {
-            var lancamentos = await context.LancamentosFinanceiros.ToListAsync();
+            var lancamentos = await context.LancamentosFinanceiros.ToArrayAsync();
             return lancamentos;
         }
 

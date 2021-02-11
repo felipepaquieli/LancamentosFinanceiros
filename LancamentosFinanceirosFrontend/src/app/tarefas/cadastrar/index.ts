@@ -1,1 +1,1 @@
-export * from './cadastrar-tarefa.component';
+export * from './cadastrar-lancamento.component';

@@ -1,3 +1,3 @@
-export * from './tarefa.model';
-export * from './tarefa.service';
+export * from './lancamento.model';
+export * from './lancamento.service';
 export * from './tarefa-concluida.directive';

@@ -1,14 +1,14 @@
 import { TestBed, inject } from '@angular/core/testing';
-import { TarefaService } from './tarefa.service';
+import { LancamentoService } from './lancamento.service';
 
 describe('TarefaService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [TarefaService]
+      providers: [LancamentoService]
     });
   });
 
-  it('should ...', inject([TarefaService], (service: TarefaService) => {
+  it('should ...', inject([LancamentoService], (service: LancamentoService) => {
     expect(service).toBeTruthy();
   }));
 });

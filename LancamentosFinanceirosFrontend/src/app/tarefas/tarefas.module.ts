@@ -4,11 +4,11 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { 
-  TarefaService, 
+  LancamentoService, 
   TarefaConcluidaDirective 
 } from './shared';
 import { ListarTarefaComponent } from './listar';
-import { CadastrarTarefaComponent } from './cadastrar';
+import { CadastrarLancamentoComponent } from './cadastrar';
 import { EditarTarefaComponent } from './editar';
 
 @NgModule({
@@ -19,12 +19,12 @@ import { EditarTarefaComponent } from './editar';
   ],
   declarations: [
   	ListarTarefaComponent,
-  	CadastrarTarefaComponent,
+  	CadastrarLancamentoComponent,
   	EditarTarefaComponent,
   	TarefaConcluidaDirective
   ],
   providers: [
-  	TarefaService
+  	LancamentoService
   ]
 })
 export class TarefasModule { }

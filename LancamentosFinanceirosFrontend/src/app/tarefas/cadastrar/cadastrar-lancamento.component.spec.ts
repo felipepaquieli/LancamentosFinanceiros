@@ -1,14 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CadastrarTarefaComponent } from './cadastrar-tarefa.component';
+import { CadastrarLancamentoComponent } from './cadastrar-lancamento.component';
 
 describe('CadastrarTarefaComponent', () => {
-  let component: CadastrarTarefaComponent;
-  let fixture: ComponentFixture<CadastrarTarefaComponent>;
+  let component: CadastrarLancamentoComponent;
+  let fixture: ComponentFixture<CadastrarLancamentoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CadastrarTarefaComponent ]
+      declarations: [ CadastrarLancamentoComponent ]
     })
     .compileComponents();
   }));

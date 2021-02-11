@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felip\\Documents\\TesteItau\\LancamentosFinanceiros\\LancamentosFinanceiros.csproj": {}
+    "C:\\Users\\felip\\OneDrive\\Documentos\\Teste Itau\\Repositorio\\LancamentosFinanceiros\\LancamentosFinanceiros_API\\LancamentosFinanceiros.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felip\\Documents\\TesteItau\\LancamentosFinanceiros\\LancamentosFinanceiros.csproj": {
+    "C:\\Users\\felip\\OneDrive\\Documentos\\Teste Itau\\Repositorio\\LancamentosFinanceiros\\LancamentosFinanceiros_API\\LancamentosFinanceiros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Documents\\TesteItau\\LancamentosFinanceiros\\LancamentosFinanceiros.csproj",
+        "projectUniqueName": "C:\\Users\\felip\\OneDrive\\Documentos\\Teste Itau\\Repositorio\\LancamentosFinanceiros\\LancamentosFinanceiros_API\\LancamentosFinanceiros.csproj",
         "projectName": "LancamentosFinanceiros",
-        "projectPath": "C:\\Users\\felip\\Documents\\TesteItau\\LancamentosFinanceiros\\LancamentosFinanceiros.csproj",
+        "projectPath": "C:\\Users\\felip\\OneDrive\\Documentos\\Teste Itau\\Repositorio\\LancamentosFinanceiros\\LancamentosFinanceiros_API\\LancamentosFinanceiros.csproj",
         "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Documents\\TesteItau\\LancamentosFinanceiros\\obj\\",
+        "outputPath": "C:\\Users\\felip\\OneDrive\\Documentos\\Teste Itau\\Repositorio\\LancamentosFinanceiros\\LancamentosFinanceiros_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
